@@ -21,7 +21,7 @@ function Home() {
   const router = useRouter();
 
   const navigateToProfile = () => {
-    router.push('../profile.tsx');
+    router.push('/profile');
   };
 
   return (
@@ -131,7 +131,7 @@ function Home() {
           <p className="text-center text-gray-600">
             Not vibing with the current scene? Craving results that scream &lsquo;you&rsquo;? Let&apos;s get personal! ✨🔍
           </p>
-          <Link href="/signup.jsx" passHref>
+          <Link href="/signup" passHref>
             <Button className="self-center border border-gray-300 bg-[#ed4264] text-[#ffffff] py-4 px-4 text-lg">Sign Up</Button>
           </Link>
           <p className="text-center text-gray-600">

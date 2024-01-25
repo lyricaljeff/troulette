@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 
-const YourComponent: React.FC = (): React.JSX.Element => {
+const YourComponent: React.FC = () => {
   return (
     <div className="flex flex-col h-screen font-sans bg-[#ffffff] text-[#000000]">
       <header className="flex items-center h-16 px-4 border-b shrink-0">
@@ -28,7 +28,15 @@ const YourComponent: React.FC = (): React.JSX.Element => {
         </nav>
       </header>
       <main className="flex flex-1 flex-col gap-4 md:gap-8 md:p-10">
-        {/* ... (rest of the content) ... */}
+        <div className="flex flex-row gap-4 justify-center">
+          {/* ... (rest of the content) ... */}
+        </div>
+        <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 self-center border border-gray-300 bg-[#ed4264] text-[#ffffff] py-8 px-8 text-lg">
+          Troulette
+        </button>
+        <div className="flex justify-center gap-8">
+          {/* ... (rest of the content) ... */}
+        </div>
       </main>
       <footer className="flex items-center justify-center h-16 px-4 border-t text-sm text-gray-500 dark:text-gray-400">
         <span>© 2024 Troulette. All rights reserved. | </span>
